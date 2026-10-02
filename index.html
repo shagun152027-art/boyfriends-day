@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>for my boyfriend ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+
+    color:#641f32;
+
+    background:
+        radial-gradient(circle at 10% 10%, #ffdce7 0%, transparent 25%),
+        radial-gradient(circle at 90% 30%, #ffb6ca 0%, transparent 30%),
+        linear-gradient(135deg,#fff4f7,#ffdce7,#ffb8ca,#f58ca8);
+
+    font-family:'Playfair Display',serif;
+}
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:5;
+}
+
+.heart{
+    position:absolute;
+    bottom:-60px;
+
+    color:#fff;
+    text-shadow:
+        0 0 5px #ff6f91,
+        0 0 15px #ff8eaa;
+
+    opacity:.75;
+
+    animation:float 12s linear infinite;
+}
+
+.heart:nth-child(1){left:5%;animation-duration:9s;font-size:18px}
+.heart:nth-child(2){left:15%;animation-duration:14s;font-size:27px}
+.heart:nth-child(3){left:27%;animation-duration:11s;font-size:15px}
+.heart:nth-child(4){left:39%;animation-duration:16s;font-size:24px}
+.heart:nth-child(5){left:51%;animation-duration:10s;font-size:19px}
+.heart:nth-child(6){left:63%;animation-duration:15s;font-size:29px}
+.heart:nth-child(7){left:75%;animation-duration:12s;font-size:17px}
+.heart:nth-child(8){left:87%;animation-duration:14s;font-size:25px}
+.heart:nth-child(9){left:95%;animation-duration:10s;font-size:18px}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:.8;
+    }
+
+    100%{
+        transform:translateY(-115vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* =========================
+   PAGES
+========================= */
+
+.page{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 20px;
+
+    position:relative;
+    z-index:2;
+}
+
+.container{
+    width:min(850px,100%);
+    text-align:center;
+}
+
+.small{
+    font-family:Poppins,sans-serif;
+    font-size:11px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    opacity:.65;
+}
+
+h1{
+    font-family:'DM Serif Display',serif;
+    font-style:italic;
+    font-size:clamp(55px,13vw,100px);
+    line-height:.95;
+    margin:20px 0;
+}
+
+h2{
+    font-family:'DM Serif Display',serif;
+    font-style:italic;
+    font-size:clamp(42px,9vw,70px);
+    margin:20px 0;
+}
+
+p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.divider{
+    width:80px;
+    height:2px;
+    margin:25px auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #9c2949,
+        transparent
+    );
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button,
+.link{
+    display:inline-block;
+
+    border:none;
+    text-decoration:none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #8d203c,
+            #d94768,
+            #ff9db4
+        );
+
+    color:white;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:16px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 30px rgba(120,25,55,.22);
+
+    transition:.3s;
+}
+
+button:hover,
+.link:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+/* =========================
+   CAT COUPLE
+========================= */
+
+.cat-area{
+    height:190px;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+    position:relative;
+
+    margin:20px 0;
+}
+
+.cat{
+    width:105px;
+    height:100px;
+
+    border-radius:50% 50% 45% 45%;
+
+    position:relative;
+
+    animation:catBounce 2s ease-in-out infinite;
+}
+
+.white-cat{
+    background:#fff9f6;
+    border:3px solid #e5a0b1;
+}
+
+.brown-cat{
+    background:#844559;
+    border:3px solid #683143;
+
+    animation-delay:.3s;
+}
+
+.ear{
+    position:absolute;
+
+    width:35px;
+    height:35px;
+
+    top:-15px;
+
+    background:inherit;
+
+    transform:rotate(45deg);
+
+    border-radius:8px;
+}
+
+.ear.left{
+    left:8px;
+}
+
+.ear.right{
+    right:8px;
+}
+
+.eye{
+    position:absolute;
+
+    width:7px;
+    height:10px;
+
+    top:43px;
+
+    border-radius:50%;
+
+    background:#4c1928;
+}
+
+.brown-cat .eye{
+    background:white;
+}
+
+.eye.left{
+    left:30px;
+}
+
+.eye.right{
+    right:30px;
+}
+
+.nose{
+    position:absolute;
+
+    top:58px;
+    left:48px;
+
+    width:9px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:#e15b7d;
+}
+
+.mouth{
+    position:absolute;
+
+    top:66px;
+    left:44px;
+
+    width:18px;
+    height:9px;
+
+    border-bottom:2px solid #642033;
+
+    border-radius:50%;
+}
+
+.brown-cat .mouth{
+    border-color:white;
+}
+
+.paw{
+    position:absolute;
+
+    bottom:-4px;
+    left:35px;
+
+    width:35px;
+    height:18px;
+
+    background:inherit;
+
+    border-radius:50%;
+}
+
+.kiss-heart{
+    position:absolute;
+
+    top:48px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:28px;
+
+    animation:kiss 1.6s infinite;
+}
+
+@keyframes catBounce{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+@keyframes kiss{
+
+    0%,100%{
+        transform:translateX(-50%) scale(.7);
+        opacity:.3;
+    }
+
+    50%{
+        transform:translateX(-50%) scale(1.3);
+        opacity:1;
+    }
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:18px;
+
+    margin-top:35px;
+}
+
+.card,
+.envelope{
+
+    background:rgba(255,255,255,.48);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.75);
+
+    border-radius:25px;
+
+    padding:25px 20px;
+
+    box-shadow:
+        0 15px 40px rgba(100,25,50,.1);
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.card:hover,
+.envelope:hover{
+    transform:translateY(-7px);
+}
+
+.card-title{
+    font-size:20px;
+    font-style:italic;
+}
+
+.reveal{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    margin-top:0;
+
+    transition:
+        max-height .6s ease,
+        opacity .4s ease,
+        margin .4s ease;
+
+    font-family:Poppins,sans-serif;
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+.reveal.open{
+
+    max-height:250px;
+
+    opacity:1;
+
+    margin-top:15px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline{
+
+    max-width:650px;
+
+    margin:45px auto;
+
+    text-align:left;
+}
+
+.timeline-item{
+
+    border-left:
+        2px solid rgba(128,32,57,.3);
+
+    padding:
+        0 0 40px 35px;
+
+    position:relative;
+}
+
+.timeline-item:last-child{
+    border-left:none;
+}
+
+.timeline-item::before{
+
+    content:"♡";
+
+    position:absolute;
+
+    left:-14px;
+    top:0;
+
+    width:26px;
+    height:26px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#ffe2ea;
+
+    color:#8d203c;
+}
+
+.timeline-item h3{
+
+    font-size:25px;
+
+    font-style:italic;
+
+    margin-bottom:10px;
+}
+
+.timeline-item p{
+    font-size:15px;
+}
+
+/* =========================
+   REVIEW
+========================= */
+
+.review{
+
+    max-width:600px;
+
+    margin:35px auto;
+
+    padding:28px;
+
+    background:rgba(255,255,255,.45);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    text-align:left;
+}
+
+.review-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    padding:14px 0;
+
+    border-bottom:
+        1px solid rgba(100,30,50,.12);
+
+    font-size:14px;
+}
+
+.stars{
+    letter-spacing:2px;
+}
+
+/* =========================
+   ENVELOPE
+========================= */
+
+.envelope-icon{
+    font-size:45px;
+
+    margin-bottom:10px;
+}
+
+.envelope h3{
+    font-style:italic;
+    font-size:22px;
+}
+
+/* =========================
+   FINAL LETTER
+========================= */
+
+.final-letter{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:35px 25px;
+
+    background:rgba(255,255,255,.48);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:30px;
+
+    box-shadow:
+        0 20px 50px rgba(90,20,40,.12);
+}
+
+.signature{
+
+    margin-top:30px;
+
+    font-size:26px;
+
+    font-style:italic;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+    .page{
+        padding:70px 18px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .cat{
+        width:88px;
+        height:84px;
+    }
+
+    .cat-area{
+        height:160px;
+    }
+
+    .eye.left{
+        left:24px;
+    }
+
+    .eye.right{
+        right:24px;
+    }
+
+    .nose{
+        left:39px;
+    }
+
+    .mouth{
+        left:35px;
+    }
+
+    .review-row{
+        font-size:13px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="hearts">
+
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+
+</div>
+
+
+<!-- MUSIC -->
+
+<audio
+    id="song"
+    src="bade-acche-lagte-hai.mp3"
+    loop
+    preload="auto">
+</audio>
+
+
+<!-- =========================
+PAGE 1
+========================= -->
+
+<section class="page" id="home">
+
+<div class="container">
+
+<div class="small">
+a tiny little corner of the internet
+</div>
+
+<h1>
+hey boyfriend...
+</h1>
+
+<p>
+i made you something<br>
+because apparently one message wasn't enough ♡
+</p>
+
+
+<div class="cat-area">
+
+<div class="cat white-cat">
+
+<div class="ear left"></div>
+<div class="ear right"></div>
+
+<div class="eye left"></div>
+<div class="eye right"></div>
+
+<div class="nose"></div>
+<div class="mouth"></div>
+
+<div class="paw"></div>
+
+</div>
+
+
+<div class="kiss-heart">
+💗
+</div>
+
+
+<div class="cat brown-cat">
+
+<div class="ear left"></div>
+<div class="ear right"></div>
+
+<div class="eye left"></div>
+<div class="eye right"></div>
+
+<div class="nose"></div>
+<div class="mouth"></div>
+
+<div class="paw"></div>
+
+</div>
+
+</div>
+
+
+<button onclick="playSong()" id="musicButton">
+♫ play our song
+</button>
+
+
+<br><br>
+
+
+<a
+href="#warning"
+class="link">
+okay... continue ♡
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 2
+========================= -->
+
+<section class="page" id="warning">
+
+<div class="container">
+
+<div class="small">
+important warning
+</div>
+
+<h2>
+before you continue...
+</h2>
+
+<div class="divider"></div>
+
+<p>
+
+⚠️ this website contains
+
+<br><br>
+
+excessive amounts of me loving you<br>
+embarrassing memories<br>
+way too many hearts<br>
+and one girl who is unfortunately very attached to you
+
+</p>
+
+<br>
+
+<a href="#story" class="link">
+i accept the consequences →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 3
+========================= -->
+
+<section class="page" id="story">
+
+<div class="container">
+
+<div class="small">
+chapter one
+</div>
+
+<h2>
+and then there was us ♡
+</h2>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<h3>
+the first sight
+</h3>
+
+<p>
+
+okay so technically...
+you probably don't even know this happened 😭
+
+<br><br>
+
+main CC lab ke yaha se walk kar rahi thi...
+
+aur maine tumhe apni aankhon ke corner se dekha.
+
+<br><br>
+
+and then...
+
+maine literally peeche mudke dobara dekha.
+
+<br><br>
+
+LIKE A MOVIE SCENE???
+
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>
+then we started talking
+</h3>
+
+<p>
+
+one conversation became another...
+
+phir aur conversations...
+
+aur somehow hum bas baat karte hi chale gaye.
+
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>
+and here we areeeee
+</h3>
+
+<p>
+
+from me secretly looking back at you
+
+to you becoming one of my favourite people.
+
+<br><br>
+
+life really said:
+
+"let me cook."
+
+♡
+</p>
+
+</div>
+
+</div>
+
+
+<a href="#things" class="link">
+continue →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 4
+========================= -->
+
+<section class="page" id="things">
+
+<div class="container">
+
+<div class="small">
+chapter two
+</div>
+
+<h2>
+things i love about you
+</h2>
+
+<p>
+tap each little card ♡
+</p>
+
+
+<div class="cards">
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+01 — the way you care
+</div>
+
+<div class="reveal">
+
+it's always the little things.
+
+the random check-ins,
+the way you notice things,
+and the way you make me feel cared for.
+
+</div>
+
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+02 — your smile
+</div>
+
+<div class="reveal">
+
+yes i notice it.
+
+yes i like it.
+
+no i will not be taking questions.
+
+♡
+
+</div>
+
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+03 — making me laugh
+</div>
+
+<div class="reveal">
+
+sometimes you're actually funny.
+
+sometimes you're just stupid.
+
+unfortunately both work on me.
+
+</div>
+
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+04 — the little things
+</div>
+
+<div class="reveal">
+
+the tiny things you probably don't even realise you do
+
+are some of the things i remember the most.
+
+</div>
+
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+05 — simply you
+</div>
+
+<div class="reveal">
+
+out of everyone...
+
+i'm really really glad
+
+i got you.
+
+</div>
+
+</div>
+
+
+<div class="card" onclick="toggleCard(this)">
+
+<div class="card-title">
+06 — us ♡
+</div>
+
+<div class="reveal">
+
+whatever this little story becomes,
+
+i'm grateful that it started.
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<br><br>
+
+<a href="#review" class="link">
+next little surprise →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 5
+========================= -->
+
+<section class="page" id="review">
+
+<div class="container">
+
+<div class="small">
+official documentation
+</div>
+
+<h2>
+boyfriend performance review
+</h2>
+
+
+<div class="review">
+
+
+<div class="review-row">
+
+<span>
+making me smile
+</span>
+
+<span class="stars">
+★★★★★
+</span>
+
+</div>
+
+
+<div class="review-row">
+
+<span>
+making me laugh
+</span>
+
+<span class="stars">
+★★★★★
+</span>
+
+</div>
+
+
+<div class="review-row">
+
+<span>
+being annoying
+</span>
+
+<span>
+★★★★★★★★★★
+</span>
+
+</div>
+
+
+<div class="review-row">
+
+<span>
+making me blush
+</span>
+
+<span>
+classified
+</span>
+
+</div>
+
+
+<div class="review-row">
+
+<span>
+being cute
+</span>
+
+<span>
+unfortunately yes
+</span>
+
+</div>
+
+
+<div class="review-row">
+
+<span>
+employment status
+</span>
+
+<span>
+RENEWED ♡
+</span>
+
+</div>
+
+
+</div>
+
+
+<p>
+
+contract status:
+
+<br>
+
+<strong>
+renewed indefinitely.
+</strong>
+
+</p>
+
+
+<br>
+
+<a href="#openwhen" class="link">
+okay now open these →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 6
+========================= -->
+
+<section class="page" id="openwhen">
+
+<div class="container">
+
+<div class="small">
+little envelopes
+</div>
+
+<h2>
+open when...
+</h2>
+
+<p>
+tap them ♡
+</p>
+
+
+<div class="cards">
+
+
+<!-- MISS ME -->
+
+<div class="envelope" onclick="openEnvelope(this)">
+
+<div class="envelope-icon">
+💌
+</div>
+
+<h3>
+you miss me
+</h3>
+
+<div class="reveal">
+
+then come here.
+
+<br><br>
+
+consider this your tiny digital hug
+
+until you get a real one.
+
+♡
+
+</div>
+
+</div>
+
+
+<!-- BAD DAY -->
+
+<div class="envelope" onclick="openEnvelope(this)">
+
+<div class="envelope-icon">
+🌷
+</div>
+
+<h3>
+you're having a bad day
+</h3>
+
+<div class="reveal">
+
+whatever happened,
+
+you don't have to handle everything alone.
+
+<br><br>
+
+take a breath.
+
+drink some water.
+
+and remember i'm here.
+
+</div>
+
+</div>
+
+
+<!-- SMILE -->
+
+<div class="envelope" onclick="openEnvelope(this)">
+
+<div class="envelope-icon">
+🎀
+</div>
+
+<h3>
+you need to smile
+</h3>
+
+<div class="reveal">
+
+hi stupid.
+
+<br><br>
+
+that's it.
+
+that's the message.
+
+<br><br>
+
+did it work? 😭
+
+</div>
+
+</div>
+
+
+<!-- REMINDER -->
+
+<div class="envelope" onclick="openEnvelope(this)">
+
+<div class="envelope-icon">
+💗
+</div>
+
+<h3>
+you need a reminder
+</h3>
+
+<div class="reveal">
+
+in case nobody told you today...
+
+you are very very loved.
+
+<br><br>
+
+especially by me.
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<br><br>
+
+<a href="#letter" class="link">
+one last thing →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+PAGE 7
+========================= -->
+
+<section class="page" id="letter">
+
+<div class="container">
+
+<div class="small">
+the last page
+</div>
+
+<h2>
+if you made it this far...
+</h2>
+
+
+<div class="final-letter">
+
+<p>
+
+i don't really know how to put everything i feel
+
+into one little website.
+
+<br><br>
+
+but i wanted to make something that you could
+
+come back to whenever you wanted.
+
+<br><br>
+
+thank you for all the little moments,
+
+the conversations,
+
+the laughs,
+
+the stupid jokes,
+
+and everything that somehow became
+
+a part of our story.
+
+<br><br>
+
+i don't need some perfect movie-like story.
+
+i just want more little moments with you.
+
+<br><br>
+
+and honestly...
+
+i'm really really glad
+
+that one random day near the CC lab,
+
+i turned around.
+
+<br><br>
+
+because look where that little moment brought us.
+
+♡
+
+</p>
+
+
+<div class="signature">
+
+— your girl, Shaggu ♡
+
+</div>
+
+</div>
+
+
+<br><br>
+
+
+<a href="#home" class="link">
+replay our little story ↻
+</a>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* =========================
+   MUSIC
+========================= */
+
+const song = document.getElementById("song");
+
+const musicButton =
+document.getElementById("musicButton");
+
+
+function playSong(){
+
+    song.volume = 0.65;
+
+    song.play()
+
+    .then(function(){
+
+        musicButton.innerHTML =
+        "♫ our song is playing ♡";
+
+    })
+
+    .catch(function(){
+
+        alert(
+        "tap the button once more to start the song ♡"
+        );
+
+    });
+
+}
+
+
+/* =========================
+   CLICKABLE LOVE CARDS
+========================= */
+
+function toggleCard(card){
+
+    const message =
+    card.querySelector(".reveal");
+
+    message.classList.toggle("open");
+
+}
+
+
+/* =========================
+   OPEN WHEN
+========================= */
+
+function openEnvelope(card){
+
+    const message =
+    card.querySelector(".reveal");
+
+    message.classList.toggle("open");
+
+}
+
+</script>
+
+
+</body>
+</html>
